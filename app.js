@@ -7,7 +7,7 @@ const userRouter = require("./routes/user.routes")
 const permissionRoutes = require("./routes/permission.routes")
 const customerRoutes = require("./routes/customer.routes")
 const globalErrorHandler = require("./controllers/error.controller");
-// require("./controllers/seeding")
+require("./controllers/seeding")
 
 
 
