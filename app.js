@@ -7,12 +7,14 @@ const userRouter = require("./routes/user.routes")
 const permissionRoutes = require("./routes/permission.routes")
 const customerRoutes = require("./routes/customer.routes")
 const globalErrorHandler = require("./controllers/error.controller");
+const cors = require("cors")
 require("./controllers/seeding")
 
 
 
 connectDB();
 const app = express();
+app.use(cors());
 
 // Middlewares
 app.use(express.json());
