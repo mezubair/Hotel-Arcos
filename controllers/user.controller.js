@@ -86,3 +86,7 @@ exports.logout = (req, res) => {
   res.status(200).json({ status: "success" });
 };
 
+exports.test = (req, res) => {
+res.send(" Yipee U made it ")
+};
+
